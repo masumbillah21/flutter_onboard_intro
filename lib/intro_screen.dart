@@ -10,7 +10,7 @@ class IntroScreen extends StatefulWidget {
 }
 
 class _IntroScreenState extends State<IntroScreen> {
-  goToHome() {
+  void _goToHome() {
     Navigator.of(context)
         .pushNamedAndRemoveUntil(HomeScreen.routeName, (route) => false);
   }
@@ -20,7 +20,7 @@ class _IntroScreenState extends State<IntroScreen> {
     return Scaffold(
       body: IntroductionScreen(
         onDone: () {
-          goToHome();
+          _goToHome();
         },
         done: const Text(
           'Continue',
@@ -35,7 +35,7 @@ class _IntroScreenState extends State<IntroScreen> {
           color: Colors.blueAccent,
         ),
         onSkip: () {
-          goToHome();
+          _goToHome();
         },
         showSkipButton: true,
         skip: const Text(
