@@ -1,7 +1,7 @@
 # Onboard Flutter
 Mobile app sliding into screen Using introduction_screen package
 
-[Link text](https://pub.dev/packages/introduction_screen)
+[introduction_screen](https://pub.dev/packages/introduction_screen)
 
 # Screenshots:
 
